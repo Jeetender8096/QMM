@@ -1,0 +1,91 @@
+---
+title: "Back Savers Company"
+author: "Jeetender Bhati"
+date: "2024-09-08"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+BSC<-matrix(c(3,45,"$32",2,40,"$24"),ncol=3,byrow=TRUE)
+colnames(BSC)<-c("Material","Labor","Profit")
+rownames(BSC)<-c('COLLEGIATE','MINI')
+BSC_table=as.table(BSC)
+print(BSC_table)
+```
+
+for_instance_1.1,
+
+Num_of_Collegiate$$ =x_cl $$ Num_ofmini $$ =x_ml $$
+
+**1.1) Decision_variable**: $$ =x_cl, x_ml $$ 
+
+**1.2) objective_function**:  
+maximized_profits $$ Max \hspace{.2cm} Z  = 32x_cl+24x_ml $$ 
+
+**1.3) Constraints**:\
+labour_constraint: $$45x_cl+40x_ml \le 60(40)$$ material_constraint: $$3x_cl+2x_ml \le 5000$$  sales Constraint: $$x_cl \le 1000$$ $$x_ml \le 1200$$ 
+
+**1.4) Mathematical_equation**:   
+maximized_profits $$  Max \hspace{.2cm}  Z = 32x_cl+24x_ml  $$ 
+Subject to the constraints:
+
+Labour_constraint: $$45x_cl+40x_ml \le 60(40)$$ material_constraint: $$3x_cl+2x_ml \le 5000$$\
+ Sale_constraint: $$x_C \le 1000$$ $$x_M \le 1200$$
+
+Non-negativity of the decision_variables: $$ x_cl \ge 0, x_ml \ge 0$$
+
+### **Weigelt Corporation**
+
+for_instance_1.2,
+
+***Function $$= X_{ij}$$*** where,\
+***size (L,M,S) $$= _i$$***\
+***plant (1,2,3) $$= _j$$***  
+
+
+No_of_large_units_at_plant_1 $$= X_{L1} $$
+No_of_medium_units_at_plant_1 $$= X_{M1} $$
+No_of_small_units_at_plant_1 $$= X_{S1} $$  
+
+No_of_large_units_at_plant_2 $$= X_{L2} $$
+No_of_medium_units_at_plant_2 $$= X_{M2} $$
+No_of_small_units_at_plant_2 $$= X_{S2} $$  
+
+No_of_large_units_at_plant_3 $$= X_{L3} $$
+No_of_medium_units_at_plant_3 $$= X_{M3} $$
+No_of_small_units_at_plant_3 $$= X_{S3} $$  
+
+
+**1.1) Decision_variables**:\
+$$ X_{L1},X_{M1},X_{S1} $$\
+$$ X_{L2},X_{M2},X_{S2} $$\
+$$ X_{L3},X_{M3},X_{S3} $$
+
+**1.2) Linear Programming model**:  
+maximized_profits $$  Max \hspace{.2cm}  Z = 420(X_{L1}+X_{L2}+X_{L3}) + 360(X_{M1}+X_{M2}+X_{M3}) + 300(X_{S1}+X_{S2}+X_{S3})$$  
+
+Subject to the constraints:  
+capacity_constraint: $$X_{L1}+X_{M1}+X_{S1} \le 750$$\
+$$X_{L2}+X_{M2}+X_{S2} \le 900 $$\
+$$X_{L3}+X_{M3}+X_{S3} \le 450$$\
+
+storage_constraint: $$20X_{L1}+15X_{M1}+12X_{S1} \le 13000$$\
+$$20X_{L2}+15X_{M2}+12X_{S2} \le 1200 $$\
+$$20X_{L3}+15X_{M3}+12X_{S3} \le 5000$$\
+
+sales_constraint: $$X_{L1}+X_{M1}+X_{S1} \le 750$$\
+$$X_{L2}+X_{M2}+X_{S2} \le 900 $$\
+$$X_{L3}+X_{M3}+X_{S3} \le 450$$\
+
+
+Non-negativity of the decision_variables: $$X_{L1} \ge 0, X_{M1} \ge 0, X_{S1} \ge 0, X_{L2} \ge 0, X_{M2} \ge 0, X_{S2} \ge 0, X_{L3} \ge 0, X_{M3} \ge 0, X_{S3} \ge 0  $$
+
+
+
